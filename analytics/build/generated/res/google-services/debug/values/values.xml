@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">948515576667-5h01srk97d1h6uav84q1ru7143rl78q7.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">948515576667</string>
+    <string name="google_api_key" translatable="false">AIzaSyCKWjz9nm63-hA1AjvVcARkTpa6LBNieJo</string>
+    <string name="google_app_id" translatable="false">1:948515576667:android:d4273c480e246f8ee7987e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCKWjz9nm63-hA1AjvVcARkTpa6LBNieJo</string>
+    <string name="google_storage_bucket" translatable="false">mastermindtest-25219.appspot.com</string>
+    <string name="project_id" translatable="false">mastermindtest-25219</string>
+</resources>
