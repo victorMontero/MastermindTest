@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.TableLayout
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import com.example.analytics_library.Analytics
 import com.miniclip.mastermind.task.elements.Board
 import com.miniclip.mastermind.task.types.ClueType
 import com.miniclip.mastermind.task.types.GameState
@@ -22,10 +23,13 @@ class MainActivity : AppCompatActivity() {
     private lateinit var smallLogo: ImageView
     private lateinit var bigLogo: ImageView
     private var firstNewGameClick = true
+    private var analytics: Analytics = Analytics()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        analytics.trackEvent()
 
         table = findViewById(R.id.gameTable)
         smallLogo = findViewById(R.id.logo_small)
