@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 rootProject.name = "Mastermind Test Task"
 include ':app'
 include ':analytics_library'
+include ':advertising_library'
