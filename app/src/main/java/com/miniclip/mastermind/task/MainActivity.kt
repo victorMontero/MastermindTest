@@ -9,10 +9,6 @@ import android.widget.ImageView
 import android.widget.TableLayout
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.constraintlayout.widget.ConstraintSet
-import androidx.core.view.marginBottom
-import com.example.analytics.Teste
 import com.miniclip.mastermind.task.elements.Board
 import com.miniclip.mastermind.task.types.ClueType
 import com.miniclip.mastermind.task.types.GameState
