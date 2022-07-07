@@ -42,6 +42,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics-ktx:21.0.0'
     implementation project(path: ':analytics_library')
     implementation project(path: ':advertising_library')
+    implementation 'com.google.android.gms:play-services-ads-lite:21.0.0'
     testImplementation 'junit:junit:4.+'
 
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

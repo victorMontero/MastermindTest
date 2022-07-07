@@ -10,6 +10,9 @@ import android.widget.TableLayout
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.example.analytics_library.Analytics
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
 import com.miniclip.mastermind.task.elements.Board
 import com.miniclip.mastermind.task.types.ClueType
 import com.miniclip.mastermind.task.types.GameState
@@ -24,6 +27,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var bigLogo: ImageView
     private var firstNewGameClick = true
     private var analytics: Analytics = Analytics()
+
+    private lateinit var mAdView: AdView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,6 +55,12 @@ class MainActivity : AppCompatActivity() {
         btnClear.setOnClickListener {
             onClearButtonClick()
         }
+
+        mAdView = findViewById(R.id.adView)
+
+        initializeBannerAd()
+
+        loadBannerAd()
     }
 
     override fun onBackPressed() {
@@ -135,5 +147,18 @@ class MainActivity : AppCompatActivity() {
     private fun onClearButtonClick() {
         board.clearCurrentRow()
         board.populateGame(table, applicationContext)
+    }
+
+    private fun initializeBannerAd() {
+
+        MobileAds.initialize(this)
+
+    }
+
+    private fun loadBannerAd() {
+
+        val adRequest = AdRequest.Builder()
+            .build()
+        mAdView.loadAd(adRequest)
     }
 }
